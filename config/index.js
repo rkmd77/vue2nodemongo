@@ -10,7 +10,14 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/goods/*' : {
+            target: 'http://localhost:3000'     //设置代理转发，当访问/goods时，访问3000端口
+        },
+        '/users/*' : {
+            target: 'http://localhost:3000'     //设置代理转发，当访问/users时，访问3000端口
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

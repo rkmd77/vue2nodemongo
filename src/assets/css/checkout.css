@@ -272,6 +272,10 @@ html {
   border-color: #ee7a23;
 }
 
+.addr-list li:hover .addr-set-default{
+  display: block;
+}
+
 .addr-list li.addr-new {
   color: #605F5F;
   text-align: center;
